@@ -62,7 +62,7 @@ struct TaskArchiveView: View {
                         selectedTask = nil
                     } shareAction: {
                         if let task = selectedTask {
-                            let text = "I've \(task.isCompleate ? "completed" : "tried") this task in Training Plan app: \(task.text)"
+                            let text = "I've \(task.isCompleate ? "completed" : "tried") this task in One Top Challenge app: \(task.text)"
                             shareApp(text: text)
                         }
                     }

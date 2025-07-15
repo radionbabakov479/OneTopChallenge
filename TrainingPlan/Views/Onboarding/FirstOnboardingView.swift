@@ -9,7 +9,7 @@ struct FirstOnboardingView: View {
                 .scaledToFit()
                 .padding(10)
             
-            Text("Welcome to Training Plan")
+            Text("Welcome to One Top Challenge")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
