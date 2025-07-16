@@ -42,6 +42,7 @@
 		383A156D2E243BDC004CEC49 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383A156C2E243BDC004CEC49 /* TaskDetailView.swift */; };
 		383A156F2E243C80004CEC49 /* StatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383A156E2E243C80004CEC49 /* StatSection.swift */; };
 		383A15712E243C99004CEC49 /* StatItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383A15702E243C99004CEC49 /* StatItemView.swift */; };
+		640168222E27DFC400802E52 /* FlagsmithClient in Frameworks */ = {isa = PBXBuildFile; productRef = 640168212E27DFC400802E52 /* FlagsmithClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640168222E27DFC400802E52 /* FlagsmithClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +253,7 @@
 			);
 			name = TrainingPlan;
 			packageProductDependencies = (
+				640168212E27DFC400802E52 /* FlagsmithClient */,
 			);
 			productName = TrainingPlan;
 			productReference = 383CBE0F2E1FFFC300DE5748 /* TrainingPlan.app */;
@@ -280,6 +283,9 @@
 			);
 			mainGroup = 383CBE062E1FFFC300DE5748;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				640168202E27DFC400802E52 /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 383CBE102E1FFFC300DE5748 /* Products */;
 			projectDirPath = "";
@@ -376,17 +382,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrainingPlan/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One Top Challenge";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to your camera so you can save your completed challenges.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onetopchallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -411,17 +418,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrainingPlan/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One Top Challenge";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to your camera so you can save your completed challenges.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onetopchallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -576,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		640168202E27DFC400802E52 /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flagsmith/flagsmith-ios-client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		640168212E27DFC400802E52 /* FlagsmithClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 640168202E27DFC400802E52 /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */;
+			productName = FlagsmithClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 383CBE072E1FFFC300DE5748 /* Project object */;
 }
